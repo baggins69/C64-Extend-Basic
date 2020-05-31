@@ -8,12 +8,3 @@ On the C64 you can intercept the BASIC command prompt READY. and jump to your ow
 
 By using the wedge method you can also access these new BASIC commands within your own BASIC programs. Compile the above code then load and execute by typing SYS49152. Follow this by typing NEW.
 
-10 REM BASIC TEST PROGRAM USING NEW COMMANDS
-20 !CLS
-30 !TXT,1
-40 FOR X = 0 TO 255
-50 FOR T = 0 TO 15
-50 !BRD,T : !SCR,T
-60 NEXT T
-70 NEXT X
-80 !HELP
